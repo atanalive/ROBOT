@@ -1,0 +1,379 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  inkEvaporation 0.1
+}
+Viewpoint {
+  orientation 0.042617139164283335 0.9437134520108115 0.3280071644694518 3.3856032695190534
+  position -1.6713750471633402 1.729326768734399 -1.463481820997072
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation -1 0 1
+  floorSize 3 3
+  floorTileSize 3 3
+}
+DEF AUTOCAR Robot {
+  translation -0.00020051207857751138 0.0794013574356768 0.027222145557876203
+  rotation -2.1708606052042617e-08 -0.9999999994183464 -3.410727941936717e-05 -0.0012680369759781305
+  children [
+    Pen {
+      translation 0 -0.06 0
+      name "my_pen"
+      inkColor 0 0.6039215922355652 1
+      inkDensity 0.4980392156862745
+      leadSize 0.01
+      maxDistance 0.02
+    }
+    DEF head Transform {
+      translation 0 0.04 0.06
+      children [
+        GPS {
+          children [
+            DEF head Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 1 1 1
+                }
+              }
+              geometry Cylinder {
+                height 0.02
+                radius 0.025
+              }
+            }
+          ]
+          name "robot_gps"
+        }
+      ]
+    }
+    DEF wheel_4 Transform {
+      translation -0.13 -0.04 -0.1
+      rotation 0 0 1 -1.5707996938995747
+      children [
+        Hinge2Joint {
+          jointParameters HingeJointParameters {
+            position 1.2511693070909216e-16
+          }
+          jointParameters2 JointParameters {
+            position 56.96629766770368
+            axis 0 1 0
+          }
+          device [
+            RotationalMotor {
+              name "steer_4"
+            }
+          ]
+          device2 [
+            RotationalMotor {
+              name "motor_4"
+              controlPID 2 0.5 0.2
+            }
+          ]
+          endPoint Solid {
+            rotation -2.9522096422939035e-16 -0.9999999999999999 -6.255846535454608e-17 5.865555404092186
+            children [
+              DEF wheel_4 Shape {
+                appearance Appearance {
+                }
+                geometry Cylinder {
+                  height 0.03
+                  radius 0.04
+                }
+              }
+            ]
+            name "solid(4)"
+            boundingObject USE wheel_4
+            physics Physics {
+            }
+          }
+        }
+      ]
+    }
+    DEF wheel_3 Transform {
+      translation 0.13 -0.04 -0.1
+      rotation 0 0 1 -1.5708
+      children [
+        Hinge2Joint {
+          jointParameters HingeJointParameters {
+            position -6.429318856582037e-16
+          }
+          jointParameters2 JointParameters {
+            position 56.966299463042056
+            axis 0 1 0
+          }
+          device [
+            RotationalMotor {
+              name "steer_3"
+            }
+          ]
+          device2 [
+            RotationalMotor {
+              name "motor_3"
+              controlPID 2 0.5 0.2
+            }
+          ]
+          endPoint Solid {
+            rotation 1.5170299493329092e-15 -1 3.214659428291018e-16 5.865553608753809
+            children [
+              DEF wheel_3 Shape {
+                appearance Appearance {
+                }
+                geometry Cylinder {
+                  height 0.03
+                  radius 0.04
+                }
+              }
+            ]
+            name "solid(2)"
+            boundingObject USE wheel_3
+            physics Physics {
+            }
+          }
+        }
+      ]
+    }
+    DEF wheel_2 Transform {
+      translation -0.13 -0.04 0.1
+      rotation 0 0 1 -1.5708
+      children [
+        Hinge2Joint {
+          jointParameters HingeJointParameters {
+            position 6.093215224151766e-17
+          }
+          jointParameters2 JointParameters {
+            position 56.96629414038971
+            axis 0 1 0
+          }
+          device [
+            RotationalMotor {
+              name "steer_2"
+            }
+          ]
+          device2 [
+            RotationalMotor {
+              name "motor_2"
+              controlPID 2 0.5 0.2
+            }
+          ]
+          endPoint Solid {
+            rotation -1.4377434832890412e-16 -1 -3.046607612075883e-17 5.8655589314061585
+            children [
+              DEF wheel_2 Shape {
+                appearance Appearance {
+                }
+                geometry Cylinder {
+                  height 0.03
+                  radius 0.04
+                }
+              }
+            ]
+            name "solid(1)"
+            boundingObject USE wheel_2
+            physics Physics {
+            }
+          }
+        }
+      ]
+    }
+    DEF wheel_1 Transform {
+      translation 0.13 -0.04 0.1
+      rotation 0 0 1 -1.5708
+      children [
+        Hinge2Joint {
+          jointParameters HingeJointParameters {
+            position 6.179954619836757e-17
+          }
+          jointParameters2 JointParameters {
+            position 56.96629620533432
+            axis 0 1 0
+          }
+          device [
+            RotationalMotor {
+              name "steer_1"
+            }
+          ]
+          device2 [
+            RotationalMotor {
+              name "motor_1"
+              controlPID 2 0.5 0.2
+            }
+          ]
+          endPoint Solid {
+            rotation -1.458202922249173e-16 -1 -3.089977309918379e-17 5.8655568664615485
+            children [
+              DEF wheel_1 Shape {
+                appearance Appearance {
+                }
+                geometry Cylinder {
+                  height 0.03
+                  radius 0.04
+                }
+              }
+            ]
+            boundingObject USE wheel_1
+            physics Physics {
+            }
+          }
+        }
+      ]
+    }
+    DEF body Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0.666667 1
+        }
+      }
+      geometry Box {
+        size 0.2 0.06 0.2
+      }
+    }
+  ]
+  boundingObject USE body
+  physics Physics {
+  }
+  controller "trajectory_controler"
+  controllerArgs [
+    ""
+  ]
+}
+DEF environment Solid {
+  children [
+    DEF carrier_4 Transform {
+      translation -1.5 0.2 0.5
+      children [
+        DEF carrier_1 Solid {
+          translation 0 -0.00037857965950963135 0
+          children [
+            DEF carrier_1 Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.866667 0.698039 0.615686
+                }
+              }
+              geometry Cylinder {
+                height 0.4
+                radius 0.08
+              }
+            }
+          ]
+          name "solid(3)"
+          boundingObject USE carrier_1
+          physics Physics {
+          }
+        }
+      ]
+    }
+    DEF carrier_3 Transform {
+      translation -0.5 0.2 0.5
+      children [
+        DEF carrier_1 Solid {
+          translation 0 -0.0005045653686010232 0
+          children [
+            DEF carrier_1 Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.513725 0.262745 0.180392
+                }
+              }
+              geometry Cylinder {
+                height 0.4
+                radius 0.08
+              }
+            }
+          ]
+          name "solid(1)"
+          boundingObject USE carrier_1
+          physics Physics {
+          }
+        }
+      ]
+    }
+    DEF carrier_2 Transform {
+      translation -1.5 0.2 1.5
+      children [
+        DEF carrier_1 Solid {
+          translation 0 -0.000504689870129249 -1.1529703858315088e-09
+          rotation -1 0 0 4.440228559317023e-13
+          children [
+            DEF carrier_1 Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.513725 0.262745 0.180392
+                }
+              }
+              geometry Cylinder {
+                height 0.4
+                radius 0.08
+              }
+            }
+          ]
+          name "solid(5)"
+          boundingObject USE carrier_1
+          physics Physics {
+          }
+        }
+      ]
+    }
+    DEF carrier_1 Transform {
+      translation -0.5 0.2 1.5
+      children [
+        DEF carrier_1 Solid {
+          translation 0 -0.0005046898750639128 -1.1379786002407855e-12
+          rotation -1 0 0 3.480013490014031e-16
+          children [
+            DEF carrier_1 Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.866667 0.698039 0.615686
+                }
+              }
+              geometry Cylinder {
+                height 0.4
+                radius 0.08
+              }
+            }
+          ]
+          name "solid(4)"
+          boundingObject USE carrier_1
+          physics Physics {
+          }
+        }
+      ]
+    }
+  ]
+  name "environment"
+}
+DEF ground Robot {
+  children [
+    DEF ground_display Display {
+      translation -1 0 1
+      children [
+        DEF ground Shape {
+          appearance PBRAppearance {
+            baseColor 0.596078 0.596078 0.447059
+            baseColorMap ImageTexture {
+              url [
+                "D:/study soft/webots/Webots/projects/samples/devices/worlds/textures/white256.png"
+              ]
+              filtering 0
+            }
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 3 0.001 3
+          }
+        }
+      ]
+      name "ground_display"
+      boundingObject USE ground
+      width 3000
+      height 3000
+    }
+  ]
+  name "ground"
+  controller "ground_display"
+  supervisor TRUE
+}
