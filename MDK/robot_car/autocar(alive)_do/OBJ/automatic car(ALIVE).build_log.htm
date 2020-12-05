@@ -1,0 +1,131 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: lin fangze, atanalive, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  D:\study soft\mdk5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.4.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+D:\YUEGANGAO_ROBOT\freshman_year_second_term\robot_car\autocar(alive)_do\USER\autocar(alive)_do.uvprojx
+Project File Date:  09/11/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\study soft\mdk5\ARM\ARMCC\Bin'
+Build target 'Template'
+compiling mpu6050.c...
+compiling usart2.c...
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(114): error:  #18: expected a ")"
+  int mpu_read_fifo_stream(unsigned short length, unsigned char *data,unsigned char *more);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(117): error:  #18: expected a ")"
+  int mpu_write_mem(unsigned short mem_addr, unsigned short length,unsigned char *data);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(118): error:  #18: expected a ")"
+  int mpu_read_mem(unsigned short mem_addr, unsigned short length,unsigned char *data);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(119): error:  #18: expected a ")"
+  int mpu_load_firmware(unsigned short length, const unsigned char *firmware,unsigned short start_addr, unsigned short sample_rate);
+..\HARDWARE\USART2\usart2.c: 0 warnings, 4 errors
+compiling uart4.c...
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(114): error:  #18: expected a ")"
+  int mpu_read_fifo_stream(unsigned short length, unsigned char *data,unsigned char *more);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(117): error:  #18: expected a ")"
+  int mpu_write_mem(unsigned short mem_addr, unsigned short length,unsigned char *data);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(118): error:  #18: expected a ")"
+  int mpu_read_mem(unsigned short mem_addr, unsigned short length,unsigned char *data);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(119): error:  #18: expected a ")"
+  int mpu_load_firmware(unsigned short length, const unsigned char *firmware,unsigned short start_addr, unsigned short sample_rate);
+..\HARDWARE\UART4\uart4.c(51): warning:  #177-D: variable "res"  was declared but never referenced
+  	u8 res;
+..\HARDWARE\UART4\uart4.c: 1 warning, 4 errors
+compiling main.c...
+compiling inv_mpu_dmp_motion_driver.c...
+compiling tim.c...
+compiling inv_mpu.c...
+compiling uart5.c...
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(114): error:  #18: expected a ")"
+  int mpu_read_fifo_stream(unsigned short length, unsigned char *data,unsigned char *more);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(117): error:  #18: expected a ")"
+  int mpu_write_mem(unsigned short mem_addr, unsigned short length,unsigned char *data);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(118): error:  #18: expected a ")"
+  int mpu_read_mem(unsigned short mem_addr, unsigned short length,unsigned char *data);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(119): error:  #18: expected a ")"
+  int mpu_load_firmware(unsigned short length, const unsigned char *firmware,unsigned short start_addr, unsigned short sample_rate);
+..\HARDWARE\UART5\uart5.c: 0 warnings, 4 errors
+compiling path.c...
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(114): error:  #18: expected a ")"
+  int mpu_read_fifo_stream(unsigned short length, unsigned char *data,unsigned char *more);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(117): error:  #18: expected a ")"
+  int mpu_write_mem(unsigned short mem_addr, unsigned short length,unsigned char *data);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(118): error:  #18: expected a ")"
+  int mpu_read_mem(unsigned short mem_addr, unsigned short length,unsigned char *data);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(119): error:  #18: expected a ")"
+  int mpu_load_firmware(unsigned short length, const unsigned char *firmware,unsigned short start_addr, unsigned short sample_rate);
+..\ACTION\PATH\path.c: 0 warnings, 4 errors
+compiling task.c...
+compiling fsm.c...
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(114): error:  #18: expected a ")"
+  int mpu_read_fifo_stream(unsigned short length, unsigned char *data,unsigned char *more);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(117): error:  #18: expected a ")"
+  int mpu_write_mem(unsigned short mem_addr, unsigned short length,unsigned char *data);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(118): error:  #18: expected a ")"
+  int mpu_read_mem(unsigned short mem_addr, unsigned short length,unsigned char *data);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(119): error:  #18: expected a ")"
+  int mpu_load_firmware(unsigned short length, const unsigned char *firmware,unsigned short start_addr, unsigned short sample_rate);
+..\ACTION\FSM\fsm.c: 0 warnings, 4 errors
+compiling feedback.c...
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(114): error:  #18: expected a ")"
+  int mpu_read_fifo_stream(unsigned short length, unsigned char *data,unsigned char *more);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(117): error:  #18: expected a ")"
+  int mpu_write_mem(unsigned short mem_addr, unsigned short length,unsigned char *data);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(118): error:  #18: expected a ")"
+  int mpu_read_mem(unsigned short mem_addr, unsigned short length,unsigned char *data);
+..\HARDWARE\MPU6050\eMPL\inv_mpu.h(119): error:  #18: expected a ")"
+  int mpu_load_firmware(unsigned short length, const unsigned char *firmware,unsigned short start_addr, unsigned short sample_rate);
+..\CONTROL\FEEDBACK\feedback.c(25): warning:  #223-D: function "mpu_dmp_get_yaw_data" declared implicitly
+    mpu_dmp_get_yaw_data(&ROBOT_NOW.yaw);
+..\CONTROL\FEEDBACK\feedback.c(26): warning:  #223-D: function "get_yaw_angular_velocity" declared implicitly
+  	ROBOT_NOW.w=get_yaw_angular_velocity();
+..\CONTROL\FEEDBACK\feedback.c: 2 warnings, 4 errors
+compiling control.c...
+compiling moving.c...
+..\ACTION\MOVING\moving.c(53): warning:  #68-D: integer conversion resulted in a change of sign
+  					middle_to_grab_moving(30,-30,delay1,delay2,path_right);//vx vy delay1 delay2
+..\ACTION\MOVING\moving.c(56): warning:  #68-D: integer conversion resulted in a change of sign
+  				  middle_to_grab_moving(-30,-30,delay1,delay2,path_left);
+..\ACTION\MOVING\moving.c(56): warning:  #68-D: integer conversion resulted in a change of sign
+  				  middle_to_grab_moving(-30,-30,delay1,delay2,path_left);
+..\ACTION\MOVING\moving.c(59): warning:  #68-D: integer conversion resulted in a change of sign
+  					middle_to_grab_moving(0,-30,0,delay2,path_middle);
+..\ACTION\MOVING\moving.c: 4 warnings, 0 errors
+compiling usmart_config.c...
+"..\OBJ\automatic car(ALIVE).axf" - 24 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\ÍþÍþÔó\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

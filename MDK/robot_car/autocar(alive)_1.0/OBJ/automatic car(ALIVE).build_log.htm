@@ -1,0 +1,60 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ÁÖ ·½Ôó, °¬Ì¹, LIC=2TTQD-8QDGF-IN0A7-ESR7G-2SW4P-PCYZN
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.18
+Toolchain Path:  D:\study soft\mdk5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      UL2CM3.DLL V1.157.5.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+C:\Users\ÍþÍþÔó\Desktop\autocar(alive)\USER\autocar(alive).uvprojx
+Project File Date:  05/31/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\study soft\mdk5\ARM\ARMCC\Bin'
+Build target 'Template'
+compiling usart.c...
+..\SYSTEM\usart\usart.c(39): error:  #260-D: explicit type is missing ("int" assumed)
+  _sys_exit(int x) 
+..\SYSTEM\usart\usart.c: 0 warnings, 1 error
+compiling uart4.c...
+compiling main.c...
+compiling mpu6050.c...
+compiling usart2.c...
+compiling tim.c...
+compiling moving.c...
+compiling task.c...
+compiling pid.c...
+..\CONTROL\PID\pid.c(4): warning:  #550-D: parameter "pid" was set but never used
+  void pidinit(PID pid,float kp,float ki,float kd,float outmax,float integralmax,float deadzone,u8 mode)
+..\CONTROL\PID\pid.c: 1 warning, 0 errors
+compiling fsm.c...
+compiling feedback.c...
+compiling control.c...
+compiling path.c...
+"..\OBJ\automatic car(ALIVE).axf" - 1 Error(s), 1 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\ÍþÍþÔó\Desktop\autocar(alive)\USER\RTE
+  D:\study soft\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>

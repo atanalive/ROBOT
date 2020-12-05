@@ -1,0 +1,35 @@
+..\obj\umart_to_pc.o: ..\HARDWARE\MPU6050\USMART\umart_to_pc.c
+..\obj\umart_to_pc.o: ..\HARDWARE\MPU6050\USMART\usmart_to_pc.h
+..\obj\umart_to_pc.o: ..\SYSTEM\usart\usart.h
+..\obj\umart_to_pc.o: D:\study soft\mdk5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\umart_to_pc.o: ..\SYSTEM\sys\sys.h
+..\obj\umart_to_pc.o: ..\USER\stm32f10x.h
+..\obj\umart_to_pc.o: ..\CORE\core_cm3.h
+..\obj\umart_to_pc.o: D:\study soft\mdk5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\umart_to_pc.o: ..\USER\system_stm32f10x.h
+..\obj\umart_to_pc.o: ..\USER\stm32f10x_conf.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
+..\obj\umart_to_pc.o: ..\USER\stm32f10x.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_bkp.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_can.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_cec.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_crc.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_dac.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_dma.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_exti.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_flash.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_gpio.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_i2c.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_pwr.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_rcc.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_rtc.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_sdio.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_spi.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_tim.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_usart.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h
+..\obj\umart_to_pc.o: ..\STM32F10x_FWLib\inc\misc.h
+..\obj\umart_to_pc.o: ..\HARDWARE\MPU6050\mpu6050.h

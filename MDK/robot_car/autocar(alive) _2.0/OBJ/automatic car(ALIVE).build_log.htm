@@ -1,0 +1,240 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 林 方泽, 艾坦, LIC=2TTQD-8QDGF-IN0A7-ESR7G-2SW4P-PCYZN
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.18
+Toolchain Path:  D:\study soft\mdk5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      UL2CM3.DLL V1.157.5.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+D:\粤港澳机器人\大一下\robot_car\autocar(alive) _second\USER\autocar(alive)_second.uvprojx
+Project File Date:  07/23/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\study soft\mdk5\ARM\ARMCC\Bin'
+Rebuild target 'Template'
+compiling stm32f10x_it.c...
+compiling delay.c...
+compiling usart.c...
+compiling system_stm32f10x.c...
+compiling main.c...
+..\ACTION\PATH\path.h(26): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH now_location;//同??
+..\ACTION\PATH\path.h(27): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH next_location;//同??
+main.c: 0 warnings, 2 errors
+compiling core_cm3.c...
+compiling sys.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling tim.c...
+..\ACTION\PATH\path.h(26): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH now_location;//同??
+..\ACTION\PATH\path.h(27): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH next_location;//同??
+..\HARDWARE\TIM\tim.c: 0 warnings, 2 errors
+compiling encoder.c...
+compiling mpu_iic.c...
+compiling hc_sr04.c...
+compiling inv_mpu_dmp_motion_driver.c...
+compiling mpu6050.c...
+..\ACTION\PATH\path.h(26): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH now_location;//同??
+..\ACTION\PATH\path.h(27): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH next_location;//同??
+..\HARDWARE\MPU6050\mpu6050.c: 0 warnings, 2 errors
+compiling mg995.c...
+compiling inv_mpu.c...
+compiling led.c...
+compiling motor.c...
+compiling dial_switch.c...
+compiling usart3.c...
+..\HARDWARE\USART3\usart3.c(56): error:  #20: identifier "VISION_START" is undefined
+  		 if(ROBOT_VISION==VISION_START)
+..\HARDWARE\USART3\usart3.c: 0 warnings, 1 error
+compiling tcrt5000.c...
+compiling uart4.c...
+..\ACTION\PATH\path.h(26): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH now_location;//同??
+..\ACTION\PATH\path.h(27): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH next_location;//同??
+..\HARDWARE\UART4\uart4.c: 0 warnings, 2 errors
+compiling usart2.c...
+..\ACTION\PATH\path.h(26): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH now_location;//同??
+..\ACTION\PATH\path.h(27): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH next_location;//同??
+..\HARDWARE\USART2\usart2.c: 0 warnings, 2 errors
+compiling debug.c...
+compiling uart5.c...
+..\ACTION\PATH\path.h(26): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH now_location;//同??
+..\ACTION\PATH\path.h(27): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH next_location;//同??
+..\HARDWARE\UART5\uart5.c: 0 warnings, 2 errors
+compiling moving.c...
+..\ACTION\PATH\path.h(26): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH now_location;//同??
+..\ACTION\PATH\path.h(27): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH next_location;//同??
+..\ACTION\MOVING\moving.c(51): warning:  #68-D: integer conversion resulted in a change of sign
+  					middle_to_grab_moving(30,-30,500,1200,path_right);//vx vy delay1 delay2
+..\ACTION\MOVING\moving.c(54): warning:  #68-D: integer conversion resulted in a change of sign
+  				  middle_to_grab_moving(-30,-30,500,1200,path_left);
+..\ACTION\MOVING\moving.c(54): warning:  #68-D: integer conversion resulted in a change of sign
+  				  middle_to_grab_moving(-30,-30,500,1200,path_left);
+..\ACTION\MOVING\moving.c(57): warning:  #68-D: integer conversion resulted in a change of sign
+  					middle_to_grab_moving(0,-30,0,700,path_middle);
+..\ACTION\MOVING\moving.c(363): warning:  #1-D: last line of file ends without a newline
+  }
+..\ACTION\MOVING\moving.c: 5 warnings, 2 errors
+compiling fsm.c...
+..\ACTION\PATH\path.h(26): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH now_location;//同??
+..\ACTION\PATH\path.h(27): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH next_location;//同??
+..\ACTION\FSM\fsm.c: 0 warnings, 2 errors
+compiling grab.c...
+..\ACTION\GRAB\grab.c(38): error:  #20: identifier "GRAB_SUCCEEDED" is undefined
+  		if(VISION.grab==0x07){ROBOT_GRAB=GRAB_SUCCEEDED;VISION.grab=0;}
+..\ACTION\GRAB\grab.c(45): error:  #20: identifier "PUT_SUCCEEDED" is undefined
+      if(VISION.put==1){ROBOT_PUT=PUT_SUCCEEDED;VISION.grab=0;}		
+..\ACTION\GRAB\grab.c: 0 warnings, 2 errors
+compiling task.c...
+..\ACTION\PATH\path.h(26): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH now_location;//同??
+..\ACTION\PATH\path.h(27): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH next_location;//同??
+..\ACTION\TASK\task.c(60): warning:  #223-D: function "moving_line_track" declared implicitly
+  	moving_line_track();
+..\ACTION\TASK\task.c(61): warning:  #223-D: function "go_straight_or_turn_around" declared implicitly
+  	go_straight_or_turn_around();
+..\ACTION\TASK\task.c(62): warning:  #223-D: function "whirling_180_angle" declared implicitly
+  	whirling_180_angle();
+..\ACTION\TASK\task.c: 3 warnings, 2 errors
+compiling pid.c...
+compiling path.c...
+..\ACTION\PATH\path.h(26): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH now_location;//同??
+..\ACTION\PATH\path.h(27): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH next_location;//同??
+..\ACTION\PATH\path.c: 0 warnings, 2 errors
+compiling vision.c...
+compiling usmart_to_pc.c...
+compiling usmart.c...
+compiling control.c...
+..\ACTION\PATH\path.h(26): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH now_location;//同??
+..\ACTION\PATH\path.h(27): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH next_location;//同??
+..\CONTROL\CONTROL\control.c: 0 warnings, 2 errors
+compiling usmart_config.c...
+compiling usmart_str.c...
+compiling feedback.c...
+..\ACTION\PATH\path.h(26): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH now_location;//同??
+..\ACTION\PATH\path.h(27): error:  #70: incomplete type is not allowed
+  	enum LOCATION_PATH next_location;//同??
+..\CONTROL\FEEDBACK\feedback.c(29): error:  #20: identifier "CALIBRATION_WALL" is undefined
+  	 if(ROBOT_CALIBRATION==CALIBRATION_WALL)
+..\CONTROL\FEEDBACK\feedback.c(40): error:  #20: identifier "CALIBRATION_SUCCEEDED" is undefined
+  			 ROBOT_CALIBRATION=CALIBRATION_SUCCEEDED;
+..\CONTROL\FEEDBACK\feedback.c(43): error:  #20: identifier "CALIBRATION_SUCCEEDED" is undefined
+  	 if(ROBOT_CALIBRATION==CALIBRATION_SUCCEEDED)
+..\CONTROL\FEEDBACK\feedback.c(62): error:  #20: identifier "CALIBRATION_BLACK" is undefined
+  	if(ROBOT_CALIBRATION==CALIBRATION_BLACK)
+..\CONTROL\FEEDBACK\feedback.c(65): error:  #136: struct "FEEDBACK" has no field "trace_infrared"
+  	  if((feedback.trace_infrared&0x1f)==0x1f)ROBOT_NOW.target_Vy=80;
+..\CONTROL\FEEDBACK\feedback.c(69): error:  #136: struct "FEEDBACK" has no field "trace_infrared"
+  	   if(((feedback.trace_infrared&0x1f)>>3)<3)clockwise=1;//?蟊?压??
+..\CONTROL\FEEDBACK\feedback.c(70): error:  #136: struct "FEEDBACK" has no field "trace_infrared"
+  	   else if((feedback.trace_infrared&0x03)<3)counter_clockwise=1;//?冶?压??
+..\CONTROL\FEEDBACK\feedback.c(72): error:  #136: struct "FEEDBACK" has no field "trace_infrared"
+  	   if((feedback.trace_infrared&0x1f)==0x00)
+..\CONTROL\FEEDBACK\feedback.c(91): error:  #20: identifier "CALIBRATION_PATHOVER" is undefined
+  	if(ROBOT_CALIBRATION==CALIBRATION_PATHOVER)
+..\CONTROL\FEEDBACK\feedback.c(93): error:  #136: struct "Path" has no field "X1"
+  	if(ROBOT_NOW.X!=PATH_NOW.X1)
+..\CONTROL\FEEDBACK\feedback.c(95): error:  #136: struct "Path" has no field "Y1"
+  		k3=(ROBOT_NOW.Y-PATH_NOW.Y1)/(ROBOT_NOW.X-PATH_NOW.X1);
+..\CONTROL\FEEDBACK\feedback.c(95): error:  #136: struct "Path" has no field "X1"
+  		k3=(ROBOT_NOW.Y-PATH_NOW.Y1)/(ROBOT_NOW.X-PATH_NOW.X1);
+..\CONTROL\FEEDBACK\feedback.c(106): error:  #136: struct "Path" has no field "Y1"
+  	s=sqrt((PATH_NOW.Y1-PATH_NOW.Y0)*(PATH_NOW.Y1-PATH_NOW.Y0)+(PATH_NOW.X1-PATH_NOW.X0)*(PATH_NOW.X1-PATH_NOW.X0));//???诘??甑?路径?盏愕木???
+..\CONTROL\FEEDBACK\feedback.c(106): error:  #136: struct "Path" has no field "Y0"
+  	s=sqrt((PATH_NOW.Y1-PATH_NOW.Y0)*(PATH_NOW.Y1-PATH_NOW.Y0)+(PATH_NOW.X1-PATH_NOW.X0)*(PATH_NOW.X1-PATH_NOW.X0));//???诘??甑?路径?盏愕木???
+..\CONTROL\FEEDBACK\feedback.c(106): error:  #136: struct "Path" has no field "Y1"
+  	s=sqrt((PATH_NOW.Y1-PATH_NOW.Y0)*(PATH_NOW.Y1-PATH_NOW.Y0)+(PATH_NOW.X1-PATH_NOW.X0)*(PATH_NOW.X1-PATH_NOW.X0));//???诘??甑?路径?盏愕木???
+..\CONTROL\FEEDBACK\feedback.c(106): error:  #136: struct "Path" has no field "Y0"
+  	s=sqrt((PATH_NOW.Y1-PATH_NOW.Y0)*(PATH_NOW.Y1-PATH_NOW.Y0)+(PATH_NOW.X1-PATH_NOW.X0)*(PATH_NOW.X1-PATH_NOW.X0));//???诘??甑?路径?盏愕木???
+..\CONTROL\FEEDBACK\feedback.c(106): error:  #136: struct "Path" has no field "X1"
+  	s=sqrt((PATH_NOW.Y1-PATH_NOW.Y0)*(PATH_NOW.Y1-PATH_NOW.Y0)+(PATH_NOW.X1-PATH_NOW.X0)*(PATH_NOW.X1-PATH_NOW.X0));//???诘??甑?路径?盏愕木???
+..\CONTROL\FEEDBACK\feedback.c(106): error:  #136: struct "Path" has no field "X0"
+  	s=sqrt((PATH_NOW.Y1-PATH_NOW.Y0)*(PATH_NOW.Y1-PATH_NOW.Y0)+(PATH_NOW.X1-PATH_NOW.X0)*(PATH_NOW.X1-PATH_NOW.X0));//???诘??甑?路径?盏愕木???
+..\CONTROL\FEEDBACK\feedback.c(106): error:  #136: struct "Path" has no field "X1"
+  	s=sqrt((PATH_NOW.Y1-PATH_NOW.Y0)*(PATH_NOW.Y1-PATH_NOW.Y0)+(PATH_NOW.X1-PATH_NOW.X0)*(PATH_NOW.X1-PATH_NOW.X0));//???诘??甑?路径?盏愕木???
+..\CONTROL\FEEDBACK\feedback.c(106): error:  #136: struct "Path" has no field "X0"
+  	s=sqrt((PATH_NOW.Y1-PATH_NOW.Y0)*(PATH_NOW.Y1-PATH_NOW.Y0)+(PATH_NOW.X1-PATH_NOW.X0)*(PATH_NOW.X1-PATH_NOW.X0));//???诘??甑?路径?盏愕木???
+..\CONTROL\FEEDBACK\feedback.c(113): error:  #136: struct "Path" has no field "Y1"
+  	if(ROBOT_NOW.Y>PATH_NOW.Y1)direct_unit_vector_y=-direct_unit_vector_y;//一?????薇旮?
+..\CONTROL\FEEDBACK\feedback.c(114): error:  #136: struct "Path" has no field "X1"
+  	if(ROBOT_NOW.X>PATH_NOW.X1)direct_unit_vector_x=-direct_unit_vector_x;//一?????薇旮?
+..\CONTROL\FEEDBACK\feedback.c(155): error:  #20: identifier "LAST_STATE" is undefined
+  	LAST_STATE=LAST;
+..\CONTROL\FEEDBACK\feedback.c(156): error:  #20: identifier "TURNAROUND" is undefined
+  	ROBOT_STATE=TURNAROUND;
+..\CONTROL\FEEDBACK\feedback.c(157): error:  #20: identifier "ROBOT_TURNAROUND" is undefined
+    ROBOT_TURNAROUND=TURNAROUND_IT;
+..\CONTROL\FEEDBACK\feedback.c(157): error:  #20: identifier "TURNAROUND_IT" is undefined
+    ROBOT_TURNAROUND=TURNAROUND_IT;
+..\CONTROL\FEEDBACK\feedback.c(164): error:  #20: identifier "LAST_STATE" is undefined
+  	LAST_STATE=LAST;
+..\CONTROL\FEEDBACK\feedback.c: 0 warnings, 29 errors
+"..\OBJ\automatic car(ALIVE).axf" - 54 Error(s), 8 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\粤港澳机器人\大一下\robot_car\autocar(alive) _second\USER\RTE
+  D:\study soft\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:14
+</pre>
+</body>
+</html>
